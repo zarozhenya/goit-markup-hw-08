@@ -1,0 +1,43 @@
+.occupation {
+  background-color: var(--bg-first-color);
+  padding-top: 0;
+}
+.occupation-list {
+  display: flex;
+}
+.occupation__title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.occupation-list__item {
+  position: relative;
+  flex-basis: calc((100% - 60px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.occupation-list__img {
+  display: block;
+}
+.occupation-list__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--overlay-bg-first-color);
+
+  color: var(--overlay-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

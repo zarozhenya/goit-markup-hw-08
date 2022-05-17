@@ -1,0 +1,13 @@
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container--center {
+  display: flex;
+  align-items: center;
+}
+.container--baseline {
+  display: flex;
+  align-items: baseline;
+}

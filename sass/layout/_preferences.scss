@@ -1,0 +1,30 @@
+.preferences-list {
+  display: flex;
+}
+.preferences-list__item {
+  flex-basis: calc((100% - 90px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.preferences-list__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-third-color);
+  height: 120px;
+  margin-bottom: 30px;
+}
+.preferences-list__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.preferences-list__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
