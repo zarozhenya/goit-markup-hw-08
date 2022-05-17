@@ -1,10 +1,23 @@
 .preferences-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .preferences-list__item {
-  flex-basis: calc((100% - 90px) / 3);
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 15px;
   }
 }
 
@@ -22,6 +35,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .preferences-list__text {
   font-size: 14px;

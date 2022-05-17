@@ -1,4 +1,7 @@
 .occupation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   background-color: var(--bg-first-color);
   padding-top: 0;
 }
