@@ -127,7 +127,8 @@
           <ul class="list occupation-list">
             <li class="occupation-list__item">
               <img
-                src="./images/img1.jpg"
+                srcset="./images/occupation-1.jpg 1x, ./images/occupation-1@2x.jpg 2x"
+                src="./images/occupation-1.jpg"
                 alt="Человек пишет код на клавиатуре"
                 width="370"
                 height="294"
@@ -137,7 +138,8 @@
             </li>
             <li class="occupation-list__item">
               <img
-                src="./images/img2.jpg"
+                srcset="./images/occupation-2.jpg 1x, ./images/occupation-2@2x.jpg 2x"
+                src="./images/occupation-2.jpg"
                 alt="Человек разрабатывает мобильное приложение"
                 width="370"
                 height="294"
@@ -147,7 +149,8 @@
             </li>
             <li class="occupation-list__item">
               <img
-                src="./images/img3.jpg"
+                srcset="./images/occupation-3.jpg 1x, ./images/occupation-3@2x.jpg 2x"
+                src="./images/occupation-3.jpg"
                 alt="Человек выбирает оттенок на цветовой палитре"
                 width="370"
                 height="294"
@@ -159,18 +162,30 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="title team__title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__card">
-              <img
-                src="./images/person1.jpg"
-                alt="Фото дизайнера продукта Игоря Демьяненко"
-                width="270"
-                height="260"
-                class="team-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/person-1-mob.jpg 1x, ./images/person-1-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/person-1-tablet.jpg 1x, ./images/person-1-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/person-1.jpg 1x, ./images/person-1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/person-1.jpg"
+                  alt="Фото дизайнера продукта Игоря Демьяненко"
+                  class="team-list__img"
+                />
+              </picture>
               <div class="team-list__description">
                 <h3 class="sub-title team-list__subtitle">Игорь Демьяненко</h3>
                 <p lang="en" class="text team-list__text">Product Designer</p>
@@ -227,13 +242,25 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                src="./images/person2.jpg"
-                alt="Фото фронтенд разработчика Ольги Репиной"
-                width="270"
-                height="260"
-                class="team-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/person-2-mob.jpg 1x, ./images/person-2-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/person-2-tablet.jpg 1x, ./images/person-2-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/person-2.jpg 1x, ./images/person-2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/person-2.jpg"
+                  alt="Фото фронтенд разработчика Ольги Репиной"
+                  class="team-list__img"
+                />
+              </picture>
               <div class="team-list__description">
                 <h3 class="sub-title team-list__subtitle">Ольга Репина</h3>
                 <p lang="en" class="text team-list__text">Frontend Developer</p>
@@ -290,13 +317,25 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                src="./images/person3.jpg"
-                alt="Фото маркетолога Николая Тарасова"
-                width="270"
-                height="260"
-                class="team-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/person-3-mob.jpg 1x, ./images/person-3-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/person-3-tablet.jpg 1x, ./images/person-3-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/person-3.jpg 1x, ./images/person-3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/person-3.jpg"
+                  alt="Фото маркетолога Николая Тарасова"
+                  class="team-list__img"
+                />
+              </picture>
               <div class="team-list__description">
                 <h3 class="sub-title team-list__subtitle">Николай Тарасов</h3>
                 <p lang="en" class="text team-list__text">Marketing</p>
@@ -353,13 +392,25 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                src="./images/person4.jpg"
-                alt="Фото дизайнера интерфейса пользователя Михаила Ермакова"
-                width="270"
-                height="260"
-                class="team-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/person-4-mob.jpg 1x, ./images/person-4-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/person-4-tablet.jpg 1x, ./images/person-4-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/person-4.jpg 1x, ./images/person-4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/person-4.jpg"
+                  alt="Фото дизайнера интерфейса пользователя Михаила Ермакова"
+                  class="team-list__img"
+                />
+              </picture>
               <div class="team-list__description">
                 <h3 class="sub-title team-list__subtitle">Михаил Ермаков</h3>
                 <p lang="en" class="text team-list__text">UI Designer</p>
@@ -417,8 +468,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="clients section">
+      </section>
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -466,90 +517,93 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container container--baseline">
-        <div class="info">
-          <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo--light">Studio</span></a
-          >
-          <address class="address">
-            <ul class="list address-list">
-              <li class="address-list__item">
+        <div class="info-join-wrapper">
+          <div class="info">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo--light">Studio</span></a
+            >
+            <address class="address">
+              <ul class="list address-list">
+                <li class="address-list__item">
+                  <a
+                    href="https://goo.gl/maps/K23v9RMDQ9txriYD6"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="link address-list__link city"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address-list__item">
+                  <a href="mailto:info@devstudio.com" class="link address-list__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a href="tel:+380961111111" class="link address-list__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join__text">присоединяйтесь</p>
+            <ul class="join-list list">
+              <li class="join-list__item">
                 <a
-                  href="https://goo.gl/maps/K23v9RMDQ9txriYD6"
-                  target="_blank"
+                  href="https://www.instagram.com"
                   rel="noopener nofollow noreferrer"
-                  class="link address-list__link city"
-                  >г. Киев, пр-т Леси Украинки, 26
+                  target="_blank"
+                  class="join-list__link"
+                >
+                  <svg class="join-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address-list__item">
-                <a href="mailto:info@devstudio.com" class="link address-list__link"
-                  >info@devstudio.com</a
+              <li class="join-list__item">
+                <a
+                  href="https://twitter.com"
+                  rel="noopener nofollow noreferrer"
+                  target="_blank"
+                  class="join-list__link"
                 >
+                  <svg class="join-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-item">
-                <a href="tel:+380961111111" class="link address-list__link">+38 096 111 11 11</a>
+              <li class="join-list__item">
+                <a
+                  href="https://www.facebook.com"
+                  rel="noopener nofollow noreferrer"
+                  target="_blank"
+                  class="join-list__link"
+                >
+                  <svg class="join-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-list__item">
+                <a
+                  href="https://www.linkedin.com"
+                  rel="noopener nofollow noreferrer"
+                  target="_blank"
+                  class="join-list__link"
+                >
+                  <svg class="join-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="join">
-          <p class="join__text">присоединяйтесь</p>
-          <ul class="join-list list">
-            <li class="join-list__item">
-              <a
-                href="https://www.instagram.com"
-                rel="noopener nofollow noreferrer"
-                target="_blank"
-                class="join-list__link"
-              >
-                <svg class="join-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a
-                href="https://twitter.com"
-                rel="noopener nofollow noreferrer"
-                target="_blank"
-                class="join-list__link"
-              >
-                <svg class="join-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a
-                href="https://www.facebook.com"
-                rel="noopener nofollow noreferrer"
-                target="_blank"
-                class="join-list__link"
-              >
-                <svg class="join-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a
-                href="https://www.linkedin.com"
-                rel="noopener nofollow noreferrer"
-                target="_blank"
-                class="join-list__link"
-              >
-                <svg class="join-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="subscribe">
           <label for="subscribe-input" class="subscribe__label">Подпишитесь на рассылку </label>
           <form class="subscribe__field">
@@ -569,7 +623,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-exit" data-modal-close>

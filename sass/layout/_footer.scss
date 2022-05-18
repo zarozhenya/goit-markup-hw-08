@@ -2,16 +2,22 @@
   background-color: var(--bg-second-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  .container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
 }
 .footer__logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
 }
 .address {
   font-style: normal;
 }
 .address-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .address-list__link.city {
   color: var(--secondary-text-color);
@@ -27,9 +33,31 @@
     color: var(--accent-color);
   }
 }
+.info-join-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
 .info {
   width: 231px;
-  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .join__text {
   font-weight: 700;
@@ -38,10 +66,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
   margin-bottom: 20px;
 }
 .join-list {
   display: flex;
+  justify-content: center;
 }
 .join-list__item:not(:last-child) {
   margin-right: 10px;
@@ -62,8 +94,13 @@
   }
 }
 .subscribe {
-  flex-grow: 1;
-  margin-left: 93px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+    margin-left: 93px;
+  }
 }
 .subscribe__label {
   display: block;
@@ -76,12 +113,16 @@
   margin-bottom: 20px;
 }
 .subscribe__field {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .subscribe__input {
   outline: none;
-  margin-right: 12px;
-  flex-grow: 1;
+  display: block;
+  width: 100%;
+  height: 50px;
+
   padding-left: 16px;
   color: #ffffff;
   background-color: transparent;
@@ -92,9 +133,23 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+    margin-right: 12px;
+  }
 }
 
 .subscribe__button {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   padding: 10px 28px;
