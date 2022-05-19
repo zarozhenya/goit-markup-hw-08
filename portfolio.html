@@ -23,11 +23,11 @@
   <body>
     <!-- Хедер -->
     <header class="header">
-      <div class="container container--center">
+      <div class="container">
         <a href="./index.html" lang="en" class="logo header__logo"
           >Web<span class="logo--dark">Studio</span></a
         >
-        <nav class="nav">
+        <nav class="nav header__nav">
           <ul class="list nav-list">
             <li class="nav-list__item">
               <a href="./index.html" class="link nav-list__link">Студия</a>
@@ -37,7 +37,7 @@
                 >Портфолио</a
               >
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list-item">
               <a href="" class="link nav-list__link">Контакты</a>
             </li>
           </ul>
@@ -60,6 +60,11 @@
             </a>
           </li>
         </ul>
+        <button class="header-menu__button button">
+          <svg class="header-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -119,13 +124,31 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-1.jpg"
-                    alt="Веб-сайт Технокряк"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-1-mob.jpg    1x,
+                        ./images/gallery-img-1-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-1-tablet.jpg    1x,
+                        ./images/gallery-img-1-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-1.jpg 1x, ./images/gallery-img-1@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-1.jpg"
+                      alt="Веб-сайт Технокряк"
+                      class="example-overlay__img"
+                    />
+                  </picture>
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -141,13 +164,31 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-2-mob.jpg    1x,
+                        ./images/gallery-img-2-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-2-tablet.jpg    1x,
+                        ./images/gallery-img-2-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-2.jpg 1x, ./images/gallery-img-2@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      class="example-overlay__img"
+                    />
+                  </picture>
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -163,13 +204,32 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-3.jpg"
-                    alt="Приложение ресторана Seafood"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-3-mob.jpg    1x,
+                        ./images/gallery-img-3-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-3-tablet.jpg    1x,
+                        ./images/gallery-img-3-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-3.jpg 1x, ./images/gallery-img-3@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-3.jpg"
+                      alt="Приложение ресторана Seafood"
+                      class="example-overlay__img"
+                    />
+                  </picture>
+
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -186,13 +246,31 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-4-mob.jpg    1x,
+                        ./images/gallery-img-4-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-4-tablet.jpg    1x,
+                        ./images/gallery-img-4-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-4.jpg 1x, ./images/gallery-img-4@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-4.jpg"
+                      alt="Проект Prime"
+                      class="example-overlay__img"
+                    />
+                  </picture>
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -209,13 +287,31 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-5-mob.jpg    1x,
+                        ./images/gallery-img-5-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-5-tablet.jpg    1x,
+                        ./images/gallery-img-5-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-5.jpg 1x, ./images/gallery-img-5@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-5.jpg"
+                      alt="Проект Boxes"
+                      class="example-overlay__img"
+                    />
+                  </picture>
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -231,13 +327,31 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-6.jpg"
-                    alt="Веб-сайт Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-6-mob.jpg    1x,
+                        ./images/gallery-img-6-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-6-tablet.jpg    1x,
+                        ./images/gallery-img-6-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-6.jpg 1x, ./images/gallery-img-6@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-6.jpg"
+                      alt="Веб-сайт Inspiration has no Borders"
+                      class="example-overlay__img"
+                    />
+                  </picture>
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -254,13 +368,31 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-7-mob.jpg    1x,
+                        ./images/gallery-img-7-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-7-tablet.jpg    1x,
+                        ./images/gallery-img-7-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-7.jpg 1x, ./images/gallery-img-7@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-7.jpg"
+                      alt="Издание Limited Edition"
+                      class="example-overlay__img"
+                    />
+                  </picture>
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -277,13 +409,31 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-8-mob.jpg    1x,
+                        ./images/gallery-img-8-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-8-tablet.jpg    1x,
+                        ./images/gallery-img-8-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-8.jpg 1x, ./images/gallery-img-8@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-8.jpg"
+                      alt="Проект LAB"
+                      class="example-overlay__img"
+                    />
+                  </picture>
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -300,13 +450,31 @@
             <li class="example-list__item">
               <a href="" class="example-list__link link">
                 <div class="example-overlay">
-                  <img
-                    src="./images/gallery-img-9.jpg"
-                    alt="Приложение Growing Business"
-                    width="370"
-                    height="294"
-                    class="example-overlay__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery-img-9-mob.jpg    1x,
+                        ./images/gallery-img-9-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery-img-9-tablet.jpg    1x,
+                        ./images/gallery-img-9-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/gallery-img-9.jpg 1x, ./images/gallery-img-9@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/gallery-img-9.jpg"
+                      alt="Приложение Growing Business"
+                      class="example-overlay__img"
+                    />
+                  </picture>
                   <p class="example-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -327,92 +495,95 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container container--baseline">
-        <div class="info">
-          <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo--light">Studio</span></a
-          >
-          <address class="address">
-            <ul class="list address-list">
-              <li class="address-list__item">
+        <div class="info-join-wrapper">
+          <div class="info">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo--light">Studio</span></a
+            >
+            <address class="address">
+              <ul class="list address-list">
+                <li class="address-list__item">
+                  <a
+                    href="https://goo.gl/maps/K23v9RMDQ9txriYD6"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="link address-list__link city"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address-list__item">
+                  <a href="mailto:info@devstudio.com" class="link address-list__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a href="tel:+380961111111" class="link address-list__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join__text">присоединяйтесь</p>
+            <ul class="join-list list">
+              <li class="join-list__item">
                 <a
-                  href="https://goo.gl/maps/K23v9RMDQ9txriYD6"
-                  target="_blank"
+                  href="https://www.instagram.com"
                   rel="noopener nofollow noreferrer"
-                  class="link address-list__link city"
-                  >г. Киев, пр-т Леси Украинки, 26
+                  target="_blank"
+                  class="join-list__link"
+                >
+                  <svg class="join-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address-list__item">
-                <a href="mailto:info@devstudio.com" class="link address-list__link"
-                  >info@devstudio.com</a
+              <li class="join-list__item">
+                <a
+                  href="https://twitter.com"
+                  rel="noopener nofollow noreferrer"
+                  target="_blank"
+                  class="join-list__link"
                 >
+                  <svg class="join-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-list__item">
-                <a href="tel:+380961111111" class="link address-list__link">+38 096 111 11 11</a>
+              <li class="join-list__item">
+                <a
+                  href="https://www.facebook.com"
+                  rel="noopener nofollow noreferrer"
+                  target="_blank"
+                  class="join-list__link"
+                >
+                  <svg class="join-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-list__item">
+                <a
+                  href="https://www.linkedin.com"
+                  rel="noopener nofollow noreferrer"
+                  target="_blank"
+                  class="join-list__link"
+                >
+                  <svg class="join-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="join">
-          <p class="join__text">присоединяйтесь</p>
-          <ul class="join-list list">
-            <li class="join-list__item">
-              <a
-                href="https://www.instagram.com"
-                rel="noopener nofollow noreferrer"
-                target="_blank"
-                class="join-list__link"
-              >
-                <svg class="join-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a
-                href="https://twitter.com"
-                rel="noopener nofollow noreferrer"
-                target="_blank"
-                class="join-list__link"
-              >
-                <svg class="join-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a
-                href="https://www.facebook.com"
-                rel="noopener nofollow noreferrer"
-                target="_blank"
-                class="join-list__link"
-              >
-                <svg class="join-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a
-                href="https://www.linkedin.com"
-                rel="noopener nofollow noreferrer"
-                target="_blank"
-                class="join-list__link"
-              >
-                <svg class="join-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="subscribe">
           <label for="subscribe-input" class="subscribe__label">Подпишитесь на рассылку </label>
           <form class="subscribe__field">
             <input
-              type="email"
+              name="email"
               id="subscribe-input"
-              name="user-email"
+              type="email"
               placeholder="E-mail"
               class="subscribe__input"
             />
