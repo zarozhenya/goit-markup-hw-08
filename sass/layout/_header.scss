@@ -1,14 +1,50 @@
 .header__logo {
-  margin-right: 93px;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: 88px;
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
-
+.header-menu__button {
+  background-color: transparent;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header-menu__icon {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
 /* Header */
 .header {
   border-bottom: 1px solid var(--border-first-color);
+  .container {
+    display: flex;
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
+    align-items: center;
+  }
 }
 
 .nav-list {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
@@ -44,20 +80,28 @@
 }
 
 .contacts-list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .contacts-list__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 .contacts-list__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--contacts-text-color);
   transition: color var(--animation-time) var(--animation-cubic);
@@ -65,8 +109,25 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contacts-list__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+    .contacts-list__item:last-child & {
+      width: 10px;
+      height: 14px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
   fill: currentColor;
 }
