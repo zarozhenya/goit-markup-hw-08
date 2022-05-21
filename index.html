@@ -58,7 +58,11 @@
             </a>
           </li>
         </ul>
-        <button class="header-menu__button button header-menu__button--open" data-menu-open>
+        <button
+          class="header-menu__button button header-menu__button--open"
+          data-menu-open
+          aria-label="open menu"
+        >
           <svg class="header-menu__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu-open"></use>
           </svg>
@@ -66,7 +70,11 @@
       </div>
       <div class="header-menu is-hidden" data-menu>
         <div class="container">
-          <button class="header-menu__button button header-menu__button--close" data-menu-close>
+          <button
+            class="header-menu__button button header-menu__button--close"
+            data-menu-close
+            aria-label="close menu"
+          >
             <svg class="header-menu__icon" width="40" height="40">
               <use href="./images/icons.svg#icon-menu-close"></use>
             </svg>
@@ -676,9 +684,9 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button-exit" data-modal-close>
+        <button type="button" class="button-exit" data-modal-close aria-label="close modal">
           <svg class="button-exit__icon" width="30" height="30">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -734,8 +742,8 @@
           <button type="submit" class="modal-form__button button">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
